@@ -1,0 +1,23 @@
+{
+  "databaseFile": "db",
+  "shotsDir": "shots",
+  "serviceUrl": "http://mini.s-shot.ru/",
+  "items": [
+    {
+      "id": 1,
+      "url": "google.com",
+      "period": 60,
+      "res": "1024x768",
+      "size": "400",
+      "format": "jpg"
+    },
+    {
+      "id": 2,
+      "url": "yandex.ru",
+      "period": 60,
+      "res": "1024x768",
+      "size": "400",
+      "format": "jpg"
+    }
+  ]
+}
