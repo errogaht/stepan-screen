@@ -8,7 +8,6 @@
 ini_set("display_errors", 1);
 require_once "composer/vendor/autoload.php";
 $GLOBALS['config'] = json_decode(file_get_contents('config.json'));
-k($GLOBALS['config']->items);
 
 
 if (!empty($GLOBALS['config']->items)) {
@@ -36,6 +35,9 @@ if (!empty($GLOBALS['config']->items)) {
             checkDir();
             createScreenshot($item);
             setUpdatedRecord($item);
+            k('screenshot created for task ' . $item->id);
+        } else {
+            k('no screenshots created');
         }
     }
 
@@ -154,4 +156,3 @@ function getDBdata()
     }
     return false;
 }
-//http://carbon.nesbot.com/docs/#api-interval
