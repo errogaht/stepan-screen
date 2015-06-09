@@ -21,7 +21,7 @@ if (!empty($GLOBALS['config']->items)) {
 
         /* получаем время последнего получения картинки */
         if ($updated = getTaskUpdated($item->id)) {
-            if ($updated < time() + $item->period) {
+            if ($updated + $item->period < time() ) {
                 /* похоже что пора опять получать картинку */
                 $isNeedToGetPicture = true;
             }

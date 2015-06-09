@@ -6,7 +6,7 @@
     {
       "id": 1,
       "url": "google.com",
-      "period": 60,
+      "period": 5,
       "res": "1024x768",
       "size": "400",
       "format": "jpg"
@@ -14,7 +14,7 @@
     {
       "id": 2,
       "url": "yandex.ru",
-      "period": 60,
+      "period": 5,
       "res": "1024x768",
       "size": "400",
       "format": "jpg"
